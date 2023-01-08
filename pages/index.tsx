@@ -42,14 +42,15 @@ export default function Home() {
           </p>
         </div>
 
+        {/* video principal */}
         <div className="flex justify-center my-10">
           <iframe
             className="rounded-3xl"
             width="800"
             height="405"
-            src="https://www.youtube.com/embed/R2Fs40UBrEs?start=1"
+            src="https://www.youtube.com/embed/aOldf0UZICY"
             title="YouTube video player"
-            frameBorder={0}
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
         </div>
