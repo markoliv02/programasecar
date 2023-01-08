@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* video principal */}
-        <div className="flex justify-center my-10">
+        <div className="flex justify-center my-10 p-3">
           <iframe
             className="rounded-3xl"
             width="800"
