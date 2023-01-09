@@ -13,9 +13,10 @@ export default function Home() {
     <>
       <Head>
         <title>Ebook Receitas para Secar</title>
-        <meta name="description" content="RECEITAS PARA SECAR" />
+        <meta name="description" content="RECEITAS PARA SECAR PRESELL" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="Marcos Oliveira" />
       </Head>
 
       <Script
