@@ -55,7 +55,6 @@ export default function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
         </div>
-
         <a
           href="https://go.hotmart.com/P78183595S"
           className="flex justify-center py-10 px-3"
