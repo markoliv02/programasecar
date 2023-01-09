@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>RECEITAS PARA SECAR</title>
+        <title>Ebook Receitas para Secar</title>
         <meta name="description" content="RECEITAS PARA SECAR" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -31,6 +31,7 @@ export default function Home() {
           
           `}
       </Script>
+
       <main className="container mx-auto text-black">
         <div className="flex justify-center flex-wrap">
           <h1 className="w-full text-center text-7xl font-bold text-red-600 my-10">
@@ -70,7 +71,7 @@ export default function Home() {
               VEJA DEPOIMENTOS DE PESSOAS QUE TIVERAM{" "}
               <span className="text-green-500">
                 {" "}
-                RESULTADOS COM AS RECEITAS
+                RESULTADOS COM AS RECEITAS DO EBOOK RECEITAS PARA SECAR
               </span>
             </h1>
           </div>
