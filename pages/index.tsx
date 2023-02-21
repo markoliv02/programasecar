@@ -17,6 +17,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="author" content="Marcos Oliveira" />
+        <meta
+          name="facebook-domain-verification"
+          content="v0x22a6rizcf474jmg2olgc3fo04fh"
+        />
       </Head>
 
       <Script
