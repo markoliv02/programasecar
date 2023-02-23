@@ -9,9 +9,45 @@ import appsScreen from "../assets/apps.png";
 
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+type foods = {
+  url: string;
+  title: string;
+  desc: string;
+};
 
 export default function Home() {
+  const food: Array<foods> = [
+    {
+      url: "https://static-public.klickpages.com.br/uploads/media/file/2680152/2.png",
+      title: "Sucos Detox Para Desintoxicar",
+      desc: "Os estudos apontaram que além de reduzir o colesterol o detox também elimina gordura pelas fezes e urina",
+    },
+    {
+      url: "https://static-public.klickpages.com.br/uploads/media/file/2680153/4.png",
+      title: "Sopas Milagrosas",
+      desc: "A combinação perfeita para queimar gordura em uma sopa super gostosa que substitui refeições.",
+    },
+    {
+      url: "https://static-public.klickpages.com.br/uploads/media/file/2680154/5.png",
+      title: "Shakes Funcionais",
+      desc: "Ótima bebida com bastante nutrientes para aumentar sua imunidade e saciar suas fome de preparo rápido.",
+    },
+    {
+      url: "https://static-public.klickpages.com.br/uploads/media/file/2680160/design_sem_nome_(3).jpg",
+      title: "O chá mais poderoso do Brasil",
+      desc: "Receita secreta de um dos chás mais procurados no Brasil quando o assunto é perca de peso. Incríveis os Resultados.",
+    },
+    {
+      url: "https://static-public.klickpages.com.br/uploads/media/file/2680163/design_sem_nome_(4).jpg",
+      title: "Bebidas Bomba",
+      desc: "Muitos problemas cardíacos são causadas por problemas circulatórios. O yoga ajuda a bombear o sangue e a circular o oxigênio para todas as partes do corpo de forma saudável",
+    },
+    {
+      url: "https://static-public.klickpages.com.br/uploads/media/file/2680166/design_sem_nome_(5).jpg",
+      title: "Cardápios Fit",
+      desc: "Cardápios práticos para a semana toda. Lembrando que não é uma dieta e sim uma reeducação. A nossa intenção é que você coma saudável.",
+    },
+  ];
   return (
     <>
       <Head>
@@ -52,7 +88,7 @@ export default function Home() {
         </div>
 
         {/* video principal */}
-        <div className="flex justify-center my-10 pt-3">
+        <div className="flex justify-center my-10 pt-3 mx-5">
           <iframe
             className="rounded-3xl"
             width="800"
@@ -81,7 +117,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="p-10 bg-gray-900 text-white rounded-3xl">
+        <div className="p-10 bg-gray-900 text-white rounded-3xl mx-5">
           <h1 className="font-semibold text-center text-3xl">
             6 TRANSFORMAÇÕES IMPACTANTES EM SEU CORPO NAS PRÓXIMAS SEMANAS
           </h1>
@@ -192,10 +228,11 @@ export default function Home() {
           <p>Atenção: os resultados poderão variar de pessoa para pessoa</p>
         </div>
 
-        <div className="my-36 w-full flex justify-center">
-          <div className="grid grid-cols-2">
+        <div className="my-36 w-full flex justify-center mx-5">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             <div>
               <img
+                className="p-10 md:p-0 md:w-full md:h-full"
                 src="https://static-public.klickpages.com.br/uploads/media/file/1505553/design_sem_nome_(2).png"
                 alt=""
               />
@@ -322,7 +359,52 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-gray-900 p-5">
+        <div className="flex justify-center flex-wrap mt-20 bg-orange-100 py-20 mx-5 my-40 mx-3 rounded-3xl">
+          <p className="text-xs text-center w-[500px]">
+            Atenção: Se você é uma pessoa que precisa muito ter resultados e que
+            sofre frequentemente com ANSIEDADE, o nosso PROGRAMA pode,
+            definitivamente, te ajudar a partir de agora. E o melhor de tudo, é
+            só R$37,00!
+          </p>
+
+          <div className="flex justify-center w-full">
+            <h1 className="text-center text-4xl font-bold w-[700px] my-5 mx-3">
+              O Programa é a base de que alimentos simples que você tem em casa,
+              são muitas receitas como:
+            </h1>
+          </div>
+
+          <div id="receitas" className="grid grid-cols-1 md:grid-cols-3">
+            {food.map((Currentfood, index) => (
+              <div key={index} className="flex flex-wrap justify-center my-5">
+                <img
+                  className="w-56 h-56 rounded-full"
+                  src={Currentfood.url}
+                  alt=""
+                />
+                <div className="flex flex-wrap justify-center text-center w-full">
+                  <h2 className="text-2xl font-semibold w-56">
+                    {Currentfood.title}
+                  </h2>
+                </div>
+                <p className="text-center text-sm w-72 my-4">
+                  {Currentfood.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <a
+          href="https://go.hotmart.com/P78183595S?ap=8c15"
+          className="flex justify-center py-10 px-3"
+        >
+          <div className="flex p-5 justify-center items-center bg-green-500 w-[500px] rounded-3xl text-center text-white font-bold text-3xl cursor-pointer hover:bg-green-700">
+            EU QUERO
+          </div>
+        </a>
+
+        <div className="bg-gray-900 p-5 mx-5 my-10 rounded-3xl">
           <div className="flex justify-center">
             <h1 className="text-center font-bold text-3xl text-white w-[500px]">
               VEJA DEPOIMENTOS DE PESSOAS QUE TIVERAM{" "}
@@ -354,14 +436,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a
-          href="https://go.hotmart.com/P78183595S?ap=8c15"
-          className="flex justify-center py-10 px-3"
-        >
-          <div className="flex p-5 justify-center items-center bg-green-500 w-[500px] rounded-3xl text-center text-white font-bold text-3xl cursor-pointer hover:bg-green-700">
-            EU QUERO
-          </div>
-        </a>
+
+        <div className="bg-green-500 mx-5 p-10 text-white flex flex-wrap justify-center rounded-3xl">
+          <h1 className="text-center font-bold text-4xl my-5">
+            E todas essas transformações agora estão disponíveis para você com o
+            Programa RECEITAS PARA SECAR EM 30 DIAS{" "}
+          </h1>
+
+          <h3 className="text-center font-semibold text-xl">
+            Um passo a passo completo de 30 dias que vai mudar sua vida para
+            sempre, você não precisará mais de dietas malucas e de produtos em
+            cápsula para chegar ao seu corpo dos sonhos, com o nosso programa
+            você começará a mudar seu corpo a partir de hoje!
+          </h3>
+        </div>
 
         <div className="flex justify-center my-10">
           <h1 className="text-center font-bold text-3xl w-[600px]">
@@ -378,6 +466,49 @@ export default function Home() {
             src="https://static-public.klickpages.com.br/uploads/media/file/2826687/checkooooout_(4).png"
             alt="depoimentos de pessoas que emagreceram com receitas para secar"
           />
+        </div>
+
+        <div className="bg-green-500 mx-5 p-10 text-white flex flex-wrap justify-center rounded-3xl my-10">
+          <h1 className="text-center font-bold text-4xl my-5">
+            Prepare-se para um novo método alimentar que vai mudar o seu corpo!
+          </h1>
+
+          <h3 className="text-center font-semibold text-xl">
+            O passo a passo completo do seu resultado cabe na palma da sua mão.
+            Rápido e prático!
+          </h3>
+          <div className="flex justify-center w-full">
+            <img
+              className="mt-5"
+              src="
+          https://static-public.klickpages.com.br/uploads/media/file/680104/clientes_ebook.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-wrap w-full justify-center ">
+          <iframe
+            src="https://player.vimeo.com/video/471581175?h=9d765177d1"
+            width="400"
+            height="533"
+            allow="autoplay; fullscreen; picture-in-picture"
+          />
+
+          <div className="flex flex-wrap justify-center w-full">
+            <h1 className="text-3xl text-center my-5 font-semibold w-[700px]">
+              Veja no vídeo acima você vai entender melhor como funciona o
+              programa na prática
+            </h1>
+            <div className="flex justify-center w-full">
+              <p className="text-center w-[700px]">
+                Ao adquirir o programa você receberá o seu material você vai
+                abri-lo e entrar na terceira página e clicar no botão para ser
+                redirecionada para o nosso Grupo Vip. A partir esse momento você
+                será acompanhada por nós e estará juntas com as outras meninas.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div
