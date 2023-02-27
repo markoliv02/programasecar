@@ -83,7 +83,7 @@ export default function Home() {
           </h1>
           <p className="text-center  text-3xl">
             Você sabia que existe um método que te ensina e te ajuda a eliminar
-            até entre 5 a 10 kg em 30 dias? quem saber como?
+            até entre 5 a 10 kg em 30 dias? quer saber como?
           </p>
         </div>
 
