@@ -78,12 +78,19 @@ export default function Home() {
 
       <main className="container mx-auto text-black">
         <div className="flex justify-center flex-wrap">
-          <h1 className="w-full text-center text-7xl font-bold text-red-600 my-10">
-            Não perca essa chance !
+          <h1 className="w-full text-center text-md md:text-xl font-semibold text-white bg-red-600 p-2">
+            Emagreça com saúde em 30 dias: Descubra as receitas deliciosas e
+            eficazes do nosso ebook de emagrecimento!
           </h1>
-          <p className="text-center  text-3xl">
-            Você sabia que existe um método que te ensina e te ajuda a eliminar
-            até entre 5 a 10 kg em 30 dias? quer saber como?
+
+          <p className="text-center w-[1000px] leading-normal mt-10 font-semibold md:font-bold uppercase text-2xl md:text-4xl">
+            Programa de Receitas para Secar Ajudou{" "}
+            <span className="bg-green-500 text-white px-2">
+              {" "}
+              Mais de 75.000 Pessoas em 7 Países nos Últimos 2 Anos{" "}
+            </span>{" "}
+            que Precisavam Reduzir Drasticamente Suas GORDURAS CORPORAIS em
+            poucos dias
           </p>
         </div>
 
@@ -100,7 +107,7 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full my-5">
           <p className="w-80 text-center">
             Acesso vitalício por <strong> apenas R$37,00!</strong> Pague a vista
             ou parcele no cartão em até 4x.{" "}
@@ -108,21 +115,12 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex justify-center py-10 px-3">
-          <a
-            href="https://go.hotmart.com/P78183595S?ap=8c15"
-            className="flex p-5 justify-center items-center bg-green-500 w-[500px] rounded-3xl text-center text-white font-bold text-3xl cursor-pointer hover:bg-green-700"
-          >
-            QUERO PERDER ATÉ 10KG EM 30 DIAS
-          </a>
-        </div>
-
         <div className="p-10 bg-gray-900 text-white rounded-3xl mx-5">
-          <h1 className="font-semibold text-center text-3xl">
+          <h1 className="font-semibold text-left md:text-center text-xl md:text-3xl">
             6 TRANSFORMAÇÕES IMPACTANTES EM SEU CORPO NAS PRÓXIMAS SEMANAS
           </h1>
 
-          <div className="mt-5 grid grid-cols-2 ">
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-2 ">
             <div>
               <ul>
                 <li className="flex items-center my-3 text-lg">
@@ -172,6 +170,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+
             <div>
               <ul>
                 <li className="flex items-center my-3 text-lg">
@@ -223,12 +222,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className="flex justify-center w-full text-sm mb-10 mt-3 text-center">
-          <p>Atenção: os resultados poderão variar de pessoa para pessoa</p>
+        <div className="flex justify-center py-10 px-3">
+          <a
+            href="https://go.hotmart.com/P78183595S?ap=8c15"
+            className="flex p-5 justify-center items-center bg-green-500 w-[500px] rounded-3xl text-center text-white font-bold text-3xl cursor-pointer hover:bg-green-700"
+          >
+            QUERO PERDER ATÉ 10KG EM 30 DIAS
+          </a>
         </div>
 
-        <div className="my-36 w-full flex justify-center mx-5">
+        <div className="flex justify-center w-full text-sm mb-10 mt-2 text-center ">
+          <p className="w-52">
+            Atenção: os resultados poderão variar de pessoa para pessoa
+          </p>
+        </div>
+
+        <div className="mt-20 w-full flex justify-center md:mx-5">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div>
               <img
@@ -238,11 +247,11 @@ export default function Home() {
               />
             </div>
             <div>
-              <h1 className="ml-5 text-3xl font-bold">
+              <h1 className="ml-5 text-2xl md:text-3xl font-bold">
                 ÚLTIMAS HORAS COM VALOR PROMOCIONAL DISPONÍVEL !
               </h1>
               <ul>
-                <li className="flex mt-5 ml-10">
+                <li className="flex mt-5 ml-10 text-gray-700">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -258,7 +267,7 @@ export default function Home() {
                   </svg>
                   Reeducação com Receitas
                 </li>
-                <li className="flex mt-5 ml-10">
+                <li className="flex mt-5 ml-10 text-gray-700">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +283,7 @@ export default function Home() {
                   </svg>
                   Aprenda a comer saudável
                 </li>
-                <li className="flex mt-5 ml-10">
+                <li className="flex mt-5 ml-10 text-gray-700">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -290,7 +299,7 @@ export default function Home() {
                   </svg>
                   Receitas rápidas e práticas
                 </li>
-                <li className="flex mt-5 ml-10">
+                <li className="flex mt-5 ml-10 text-gray-700">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -306,7 +315,7 @@ export default function Home() {
                   </svg>
                   Acelere o metabolismo
                 </li>
-                <li className="flex mt-5 ml-10">
+                <li className="flex mt-5 ml-10 text-gray-700">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -322,7 +331,7 @@ export default function Home() {
                   </svg>
                   Desintoxique o organismos
                 </li>
-                <li className="flex mt-5 ml-10">
+                <li className="flex mt-5 ml-10 text-gray-700">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -338,7 +347,7 @@ export default function Home() {
                   </svg>
                   Livre-se da gordura que te incomoda
                 </li>
-                <li className="flex mt-5 ml-10">
+                <li className="flex mt-5 ml-10 text-gray-700">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -359,8 +368,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center flex-wrap mt-20 bg-orange-100 py-20 mx-5 my-40 mx-3 rounded-3xl">
-          <p className="text-xs text-center w-[500px]">
+        <div className="flex justify-center flex-wrap mt-20 bg-orange-100 py-16 mx-5 mb-20 mx-3 rounded-3xl">
+          <p className="text-sm text-center w-[500px] text-gray-700">
             Atenção: Se você é uma pessoa que precisa muito ter resultados e que
             sofre frequentemente com ANSIEDADE, o nosso PROGRAMA pode,
             definitivamente, te ajudar a partir de agora. E o melhor de tudo, é
@@ -368,7 +377,7 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center w-full">
-            <h1 className="text-center text-4xl font-bold w-[700px] my-5 mx-3">
+            <h1 className="text-center text-2xl md:text-4xl font-bold w-[700px] my-5 mx-3">
               O Programa é a base de que alimentos simples que você tem em casa,
               são muitas receitas como:
             </h1>
@@ -387,7 +396,7 @@ export default function Home() {
                     {Currentfood.title}
                   </h2>
                 </div>
-                <p className="text-center text-sm w-72 my-4">
+                <p className="text-center text-sm w-72 my-4 text-gray-800">
                   {Currentfood.desc}
                 </p>
               </div>
@@ -395,14 +404,19 @@ export default function Home() {
           </div>
         </div>
 
-        <a
-          href="https://go.hotmart.com/P78183595S?ap=8c15"
-          className="flex justify-center py-10 px-3"
-        >
-          <div className="flex p-5 justify-center items-center bg-green-500 w-[500px] rounded-3xl text-center text-white font-bold text-3xl cursor-pointer hover:bg-green-700">
-            EU QUERO
-          </div>
-        </a>
+        <div className="bg-green-500 mx-5 p-5 md:p-10 text-white flex flex-wrap justify-center rounded-3xl">
+          <h1 className="text-center font-bold text-2xl md:text-4xl my-5">
+            E todas essas transformações agora estão disponíveis para você com o
+            Programa RECEITAS PARA SECAR EM 30 DIAS{" "}
+          </h1>
+
+          <h3 className="text-center font-semibold text-md">
+            Um passo a passo completo de 30 dias que vai mudar sua vida para
+            sempre, você não precisará mais de dietas malucas e de produtos em
+            cápsula para chegar ao seu corpo dos sonhos, com o nosso programa
+            você começará a mudar seu corpo a partir de hoje!
+          </h3>
+        </div>
 
         <div className="bg-gray-900 p-5 mx-5 my-10 rounded-3xl">
           <div className="flex justify-center">
@@ -437,22 +451,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-green-500 mx-5 p-10 text-white flex flex-wrap justify-center rounded-3xl">
-          <h1 className="text-center font-bold text-4xl my-5">
-            E todas essas transformações agora estão disponíveis para você com o
-            Programa RECEITAS PARA SECAR EM 30 DIAS{" "}
-          </h1>
-
-          <h3 className="text-center font-semibold text-xl">
-            Um passo a passo completo de 30 dias que vai mudar sua vida para
-            sempre, você não precisará mais de dietas malucas e de produtos em
-            cápsula para chegar ao seu corpo dos sonhos, com o nosso programa
-            você começará a mudar seu corpo a partir de hoje!
-          </h3>
-        </div>
+        {/* <a
+          href="https://go.hotmart.com/P78183595S?ap=8c15"
+          className="flex justify-center py-10 px-3"
+        >
+          <div className="flex p-5 justify-center items-center bg-green-500 w-[500px] rounded-3xl text-center text-white font-bold text-3xl cursor-pointer hover:bg-green-700">
+            EU QUERO
+          </div>
+        </a> */}
 
         <div className="flex justify-center my-10">
-          <h1 className="text-center font-bold text-3xl w-[600px]">
+          <h1 className="text-center font-bold text-3xl md:w-[600px]">
             Espaço dos clientes{" "}
             <span className="text-green-500">
               {" "}
@@ -469,7 +478,7 @@ export default function Home() {
         </div>
 
         <div className="bg-green-500 mx-5 p-10 text-white flex flex-wrap justify-center rounded-3xl my-10">
-          <h1 className="text-center font-bold text-4xl my-5">
+          <h1 className="text-center font-bold text-2xl md:text-4xl my-5">
             Prepare-se para um novo método alimentar que vai mudar o seu corpo!
           </h1>
 
@@ -487,7 +496,250 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-wrap w-full justify-center ">
+        <div className="my-10">
+          <div className="grid md:grid-cols-2">
+            <div className="flex justify-center w-full">
+              <div className="p-5 md:w-[500px]">
+                <h1 className="text-center md:text-left text-4xl font-bold">
+                  QUEM DEVE PARTICIPAR DO PROGRAMA?
+                </h1>
+                <p className="text-left mt-5 text-gray-700">
+                  Nós recomendamos ele para todas as pessoas que estão cansadas
+                  e frustradas com os mais diversos métodos que tem por ai que
+                  dizem que você vai ficar com o corpo magro e bonito, mas nada
+                  disso acontece.
+                </p>
+                <p className="text-left mt-5 text-gray-700">
+                  {" "}
+                  Para qualquer mulher que precisa de ajuda para transformar o
+                  corpo. Talvez você já tenha tentado academia, alguma dieta, ou
+                  não tenha tentado nada antes porque não acreditava em nada que
+                  via na frente, nós sabemos como é isso.
+                </p>
+                <p className="text-left mt-5 text-gray-700">
+                  {" "}
+                  Temos certeza que você só queira algo que dê resultado mais
+                  rápido e duradouro, sem enganação, então agora chegou a sua
+                  vez de ter o resultado que tanto busca há anos!
+                </p>
+                <p className="text-left mt-5 text-gray-700">
+                  {" "}
+                  Você só precisa estar decidida e seguir nossas orientações
+                  durante o programa, combinado?
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <img
+                className="w-96"
+                src="https://static-public.klickpages.com.br/uploads/media/file/2811858/design_sem_nome_(57).png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-green-500 mx-5 p-10 text-white flex flex-wrap justify-center rounded-3xl my-10">
+          <h1 className="text-center font-bold text-2xl md:text-4xl my-5">
+            Tenha Hoje Seu Programa Receitas Para Secar em 30 Dias e Comece a
+            Reduzir Peso Urgente!
+          </h1>
+
+          <h3 className="text-center font-semibold text-xl">
+            Apenas seguindo o passo a passo todos os dias sem sair de casa!
+          </h3>
+        </div>
+
+        <div className="flex flex-wrap justify-center w-full">
+          <div className="w-[800px]">
+            <h1 className="w-full text-4xl font-semibold text-center">
+              O que você vai receber adquirindo o Programa Receitas Para Secar
+              em 30 Dias
+            </h1>
+
+            <h2 className="text-center mt-2 text-xl text-gray-700">
+              Serão 2 e-books incríveis!
+              <br />
+              Receba imediatamente e acesse agora mesmo no seu computador ou
+              celular
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 mt-10">
+            <div className="flex justify-center w-full">
+              <img
+                className="w-72"
+                src="https://static-public.klickpages.com.br/uploads/media/file/2810886/smartmockups_kgmrtro3.png"
+                alt=""
+              />
+            </div>
+            <div className="p-5">
+              <h1 className="text-center text-2xl font-semibold">
+                O E-book Receitas para secar em 30 dias:
+              </h1>
+
+              <h3 className="text-lg md:w-[600px] my-4 text-gray-700">
+                E nele você encontrará mais de 100 páginas e muita receitas que
+                vão te fazer triturar toda a gordura acumulada em seu corpo!
+              </h3>
+
+              <ul className="text-gray-700">
+                <li className="flex items-center my-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6 mr-2 text-yellow-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  A Receita Secreta do Chá mais PODEROSO do Brasil
+                </li>
+                <li className="flex items-center my-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6 mr-2 text-yellow-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Receitas de Bebidas Bomba para perder peso em 2 semanas de uso
+                </li>
+                <li className="flex items-center my-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6 mr-2 text-yellow-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Sugestões de cardápios fit para você comer de forma saudável
+                  no seu dia a dia
+                </li>
+                <li className="flex items-center my-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6 mr-2 text-yellow-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Receitas de Doces Fit e séries de Circuito Funcional para
+                  queimar gordura mesmo dormindo
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex justify-center w-full">
+              <img
+                className="w-72"
+                src="https://static-public.klickpages.com.br/uploads/media/file/2810890/smartmockups_kgmruzjm.png"
+                alt=""
+              />
+            </div>
+            <div className="p-5">
+              <h1 className="text-center text-2xl font-semibold">
+                E mais! O E-book do Desafio de 30 Dias:
+              </h1>
+
+              <h3 className="text-lg md:w-[600px] my-4 text-gray-700">
+                Um cronograma completo e passo a passo desde o zero para você
+                começar ir desde o seu primeiro dia de reeducação alimentar, até
+                atingir o seu corpo desejado!
+              </h3>
+
+              <ul className="text-gray-700">
+                <li className="flex items-center my-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6 mr-2 text-yellow-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  O passo a passo completo do que comer e beber durante os 30
+                  dias
+                </li>
+                <li className="flex items-center my-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6 mr-2 text-yellow-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Entenderá como funcionam as Receitas para secar e quando
+                  usá-las.
+                </li>
+                <li className="flex items-center my-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6 mr-2 text-yellow-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Será guiada por todas as refeições diárias com base nas
+                  sugestões de cardápios.
+                </li>
+                <li className="flex items-center my-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6 mr-2 text-yellow-600"
+                  >
+                    <path d="M9.375 3a1.875 1.875 0 000 3.75h1.875v4.5H3.375A1.875 1.875 0 011.5 9.375v-.75c0-1.036.84-1.875 1.875-1.875h3.193A3.375 3.375 0 0112 2.753a3.375 3.375 0 015.432 3.997h3.943c1.035 0 1.875.84 1.875 1.875v.75c0 1.036-.84 1.875-1.875 1.875H12.75v-4.5h1.875a1.875 1.875 0 10-1.875-1.875V6.75h-1.5V4.875C11.25 3.839 10.41 3 9.375 3zM11.25 12.75H3v6.75a2.25 2.25 0 002.25 2.25h6v-9zM12.75 12.75v9h6.75a2.25 2.25 0 002.25-2.25v-6.75h-9z" />
+                  </svg>
+                  ACESSO AO NOSSO GRUPO VIP NO FACEBOOK COM MAIS DE 75 MIL
+                  PESSOAS
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="bg-green-500 mx-5 p-10 text-white flex flex-wrap justify-center rounded-3xl my-10">
+            <h1 className="text-center font-bold text-2xl md:text-4xl my-5">
+              Um e-book complementa o outro. Você irá os usar 2 juntos para
+              expulsar de 5 a 10kg em 30 dias!
+            </h1>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap w-full justify-center p-5">
           <iframe
             src="https://player.vimeo.com/video/471581175?h=9d765177d1"
             width="400"
@@ -554,6 +806,47 @@ export default function Home() {
             SIM, EU QUERO PERDER GORDURA LOCALIZADA E EMAGRECER!
           </div>
         </a>
+
+        <div>
+          <h1 className="text-center text-2xl md:text-4xl leading-normal">
+            São pessoas comuns como você que nos procuram e conseguem ter
+            resultados surpreendentes.{" "}
+            <span className="bg-green-500 text-white">
+              {" "}
+              LEMBRANDO: Os resultados variam de pessoa pra pessoa sempre.
+            </span>
+          </h1>
+
+          <div className="flex justify-center flex-wrap p-10">
+            <div className="flex justify-center flex-wrap my-5">
+              <img
+                className="w-96"
+                src="https://static-public.klickpages.com.br/uploads/media/file/1505622/8.jpg"
+                alt=""
+              />
+              <h1 className="text-center w-full font-semibold text-lg">
+                Aline Moraes (6 Kgs)
+              </h1>
+              <h2 className="text-center w-full w-64">
+                Secou e eliminou as dobrinhas das costas em 29 dias de programa
+              </h2>
+            </div>
+            <div className="flex justify-center flex-wrap">
+              <img
+                className="w-96"
+                src="https://static-public.klickpages.com.br/uploads/media/file/1505611/design_sem_nome_(5).png"
+                alt=""
+              />
+              <h1 className="text-center w-full font-semibold text-lg">
+                Aldemira da Silva (17 Kgs)
+              </h1>
+              <h2 className="text-center w-full w-64">
+                Chegou pra gente super pra baixo e desmotivada e hoje esta linda
+                e mantém uma alimentação saudável
+              </h2>
+            </div>
+          </div>
+        </div>
 
         <footer>
           <div className="flex justify-center items-center text-white text-center text-xs w-full p-10 bg-gray-600">
